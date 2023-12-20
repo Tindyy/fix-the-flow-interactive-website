@@ -40,7 +40,7 @@
 }
 
 body{
-    background-color: var(--complementary-darkblue);
+    background-color: var(--complementary-blue);
     min-height: 100vh;
     overflow-x: hidden;
 
