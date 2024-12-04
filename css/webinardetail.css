@@ -1,0 +1,261 @@
+.grid-layout-container {  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-layout--column-left grid-layout--column-right";
+  }
+
+
+  
+  .grid-layout--column-left { 
+    grid-area: grid-layout--column-left;
+    margin-left: 9em;
+    background-color: var(--primary-bg-color);
+   }
+  
+  .grid-layout--column-right { 
+    grid-area: grid-layout--column-right; 
+    margin: 3em 1em;
+}
+
+
+  /*buttons*/
+  button{
+    border-radius: var(--border-radius);
+    padding: var(--button-padding);
+    background-color: var(--filter-normal);
+  }
+
+  button:hover {
+    background-color: var(--filter-hover);
+  }
+
+ button:active{
+    background-color: var(--filter-active);
+ }
+
+ .transcript-btn{
+    margin: 2em;
+    width: 80%;
+
+ }
+  /*webinar*/
+
+
+  .webinar-video-container{
+    width: 100%;
+  }
+
+
+.webinar-video-container h1{
+    font-size: var(--font-size-l);
+}
+
+.webinar-video-container h2{
+    font-size: var(--font-size-m);
+}
+  
+/*description*/
+
+.description{
+    width: 80%;
+}
+
+/*Q&A*/
+
+.q-and-a{
+    padding: 3em;
+    width: 30%;
+}
+
+
+/*transcript*/
+
+.transcript-container{
+    background-color: var(--white);
+    width: 70%;
+    margin-bottom: 4em;
+    padding: 1.25em;
+    border: var(--border-right);
+    border-radius: var(--border-radius);
+    height: 315px;
+    overflow:scroll;
+}
+
+.speaker-profile, .side-container{
+    background-color: var(--white);
+    width: 70%;
+    margin-bottom: 2em;
+    padding: 1.25em;
+    border: var(--border-right);
+    border-radius: var(--border-radius);
+}
+
+.speaker-profile h2{
+    font-size: var(--font-size-m);
+}
+
+.speaker-profile h3, .side-container h4{
+    font-size: var(--font-size-s);
+}
+
+.speaker-profile h4{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-light);
+}
+
+.speaker-profile a{
+    color: var(--link-text);
+    font-weight: var(--font-weight-black);
+    text-decoration: none;
+}
+
+.speaker-profile-picture{
+    border-radius: var(--border-radius);
+    height: 3vw;
+}
+
+.resource-interaction-button, .pdf-icon{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.pdf-icon{
+    width: 30%;
+}
+
+.pdf-icon img{
+    width: 30%;
+}
+
+
+/********/
+/*mobile*/
+
+@media (max-width: 768px) {
+    .grid-layout-container {  
+        display: grid;
+        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-rows: auto;
+        gap: 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "grid-layout--column-left"
+          "grid-layout--column-right"; /* Stack the columns */
+      }
+  
+      .grid-layout--column-left { 
+        grid-area: grid-layout--column-left;
+        background-color: var(--primary-bg-color);
+      }
+  
+      .grid-layout--column-right { 
+        grid-area: grid-layout--column-right; 
+      }
+  
+      /*buttons*/
+      button{
+        border-radius: var(--border-radius);
+        padding: calc(var(--button-padding) * 0.8); /* Reduce padding for smaller screens */
+        background-color: var(--filter-normal);
+      }
+  
+      button:hover {
+        background-color: var(--filter-hover);
+      }
+  
+      button:active{
+        background-color: var(--filter-active);
+      }
+  
+      .transcript-btn{
+        margin: 1em; /* Adjust margins */
+        width: 70%; /* Full width for buttons on mobile */
+      }
+  
+      /*webinar*/
+      .webinar-video-container{
+        width: 80%;
+      }
+
+      iframe{
+        width: 297px;
+        height: 170px;
+      }
+
+      .webinar-video-container h1{
+        font-size: calc(var(--font-size-l) * 0.9); /* Slightly smaller font size */
+      }
+  
+      .webinar-video-container h2{
+        font-size: calc(var(--font-size-m) * 0.9);
+      }
+  
+      /*description*/
+      .description{
+        width: 80%; /* Full width for descriptions */
+      }
+  
+      /*Q&A*/
+      .q-and-a{
+        padding: 1.5em; /* Reduce padding */
+        width: 60%; /* Full width for Q&A */
+      }
+  
+      /*transcript*/
+      .transcript-container{
+        width: 60%; /* Full width */
+        margin-bottom: 2em;
+        padding: 1em; /* Adjust padding */
+        height: auto; /* Flexible height */
+      }
+  
+      .speaker-profile, .side-container{
+        width: 50%; /* Full width */
+        margin-bottom: 1em;
+        padding: 1em;
+      }
+  
+      .speaker-profile h2{
+        font-size: calc(var(--font-size-m) * 0.9);
+      }
+  
+      .speaker-profile h3, .side-container h4{
+        font-size: calc(var(--font-size-s) * 0.9);
+      }
+  
+      .speaker-profile h4{
+        font-size: calc(var(--font-size-s) * 0.8);
+        font-weight: var(--font-weight-light);
+      }
+  
+      .speaker-profile a{
+        color: var(--link-text);
+        font-weight: var(--font-weight-black);
+        text-decoration: none;
+      }
+  
+      .resource-interaction-button, .pdf-icon{
+        background-color: var(--primary-color);
+        border: none;
+        border-radius: var(--border-radius);
+      }
+
+      .speaker-profile-picture{
+        border-radius: var(--border-radius);
+        height: 20vw;
+    }
+  
+      .pdf-icon{
+        width: 100%; /* Full width */
+      }
+  
+      .pdf-icon img{
+        width: 100%; /* Adjust image width */
+      }
+  }
+  

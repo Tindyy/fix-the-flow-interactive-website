@@ -1,0 +1,61 @@
+article.webinar {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: .34%;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    max-width: 20%;
+    text-align: center;
+    flex-direction: column;
+}
+
+article.webinar .thumbnail {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+article.webinar h1 {
+    font-family: var(--secondary-font);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-m);
+    color: var(--text-color);
+}
+
+article.webinar h3 {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-light);
+}
+
+.filter, button {
+    padding: var(--button-padding);
+    margin-right: 3em;
+
+    border-radius: var(--border-radius);
+    color: var(--filter-text-normal);
+
+    font-size: var(--font-size-s);
+
+}
+
+button{
+    background-color: var(--filter-normal);
+}
+
+button:hover {
+    background-color: var(--filter-hover);
+}
+
+button:active{
+    background-color: var(--filter-active);
+}
+
+.filter:active{
+    color: var(--filter-text-active);
+    transition: var(--button-ease-in-out);
+}
+
+.watch a{
+    color: var(--link-text);
+    text-decoration: none;
+}

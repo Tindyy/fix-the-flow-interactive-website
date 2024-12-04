@@ -1,0 +1,187 @@
+body{
+    background: var(--landing-page-bg);
+    color: var(--secondary-color-light);
+    text-align: center;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+
+}
+
+.about-content-container{
+    padding: 0 5rem ;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    margin-top: 8rem;
+}
+
+/*Oncollaboration logo's container*/
+h1 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 20px;
+    color: var(--white); /* White text for the title */
+}
+
+.logo-showcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo {
+    height: 60px; /* Adjust logo height to fit */
+    margin: 0 20px;
+}
+
+.logo-rsup{
+    height: 56px;
+    width: auto;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 60px; /* Same as logo height */
+    background-color: var(--white); /* White vertical line */
+}
+
+
+/*Login container*/
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.login-btn-container{
+    background-color: var(--secondary-color-light);
+    border-radius:var(--border-radius);
+    padding: var(--button-padding);
+    width: auto;
+    height: auto;
+
+}
+
+button{
+    width: auto;
+    background-color: var(--button-login-normal);
+    font-size: var(--font-size-m);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    margin-bottom: .7em;
+}
+
+button:hover{ 
+    background-color: var(--button-hover);
+    color: var(--button-text-active);
+    border: none;
+
+}
+
+button:active{
+    background-color: var(--button-active);
+    color: var(--button-text-active);
+    border: none;
+}
+
+/*h2*/
+.heading{
+    font-family: var(--secondary-font);
+    margin-bottom: 2em;
+}
+
+/*p*/
+
+p{
+    max-width: 70%;
+}
+
+.mission-p, .background-p1, .background-p2, .goals-p-list, .list-container, .goals-list{
+    display: flex;
+    justify-content: center;
+}
+
+/*mission section*/
+
+.mission-container{
+    background: var(--secondary-bg-batik);
+    color: var(--secondary-color-dark);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5em;
+    
+}
+
+.mission-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.mission-img-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Background section */
+.background-section {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+}
+
+.background-imgs-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.background-img {
+    width: 40%;
+}
+
+
+.background-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.background-img p {
+    margin-top: 10px;
+    font-size: var(--font-size-m);
+}
+
+/* Doelen section */
+.doelen-section {
+    background: var(--secondary-bg-batik); 
+    color: var(--secondary-color-dark);
+    padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+}
+
+
+.list-container ul {
+    list-style-type: none;
+    padding-left: 8em;
+    margin-left: 3em;
+}
+
+.list-container ul li {
+    margin: 15px 0;
+}
+
+.list-container ul li{
+    font-size: var(--font-size-m-l);
+}

@@ -1,0 +1,89 @@
+@font-face{
+    font-family: "inter";
+    src: url(./assets/fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf),
+    url(./assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "jost" ;
+    src: url(./assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf),
+    url(./assets/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+
+
+:root{
+    /*Color*/
+    --primary-color: #6a0025;
+    --secondary-color-dark: #1F000B;
+    --secondary-color-light:#f4eaee;
+    --white: #fff;
+    --black: #000;
+
+    --primary-bg-batik: linear-gradient(rgba(244, 234, 238,.98), rgba(244, 234, 238,.97)), url("./assets/batik/pattern_waves-7_1_2_0-0_20_1__ffffff_000000_a90c00.png");
+    --secondary-bg-batik: linear-gradient(rgba(244, 234, 238,.98), rgba(244, 234, 238,.97)), url("./assets/batik/pattern_batik-1_3_2_0-0_115_2__ffffff_b60003_b20606.png");
+    --landing-page-bg:linear-gradient(rgb(106, 0, 37,.98), rgb(106, 0, 37,.98)),  url("/assets/batik/pattern_batik-1_3_2_0-0_115_2__ffffff_b60003_b20606.png") ;
+    --primary-bg-color: rgb(244, 234, 238);
+    --opacity-bg: 0.02;
+
+    --filter-normal: #D2B2BD;
+    --filter--text-normal: #1F000B;
+    --filter-hover: #B47F92;
+    --filter-text-active: #fff;
+    --filter-active: #6A0025;
+    --filter-active-hover: #4A0019;
+
+    --button-normal: #F0E5E9;
+    --button--text-normal: #1F000B;
+    --button-hover: #6A0025;
+    --button-text-active: #fff;
+    --button-active:  #B47F92;
+    --button-active-hover: #4A0019;
+
+    --button-login-normal: #fff;
+
+    --status-: #934661;
+    --status-text: #F0E5E9;
+
+    --text: #1F000B;
+
+    /*Font*/
+
+    --primary-font: "Inter", serif; 
+    --secondary-font: "Jost", serif;
+
+    --font-weight-light: 200;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    --font-size-xxxl: 85px;
+    --font-size-xxl: 75px;
+    --font-size-xl: 35px;
+    --font-size-l:24px;
+    --font-size-m-l: 20px;
+    --font-size-m: 18px;
+    --font-size-s: 14px;
+
+    /*border*/
+    --border-radius: 10px;
+    --border-right: 1px solid #000;
+
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    /*padding*/
+
+    --button-padding: .6rem;
+}
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: var(--primary-bg-batik);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
