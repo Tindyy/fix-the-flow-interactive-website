@@ -44,7 +44,9 @@ https://tindyy.github.io/look-and-feel-corporate-identity/
 
 
 
-## Responsive
+## mobile first
+
+
 
 
 ## Bronnen
