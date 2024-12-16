@@ -1,7 +1,7 @@
 /* Base styles for mobile */
 body {
     background-color: var( --landing-page-bg);
-    color: var(--secondary-color-light);
+    color: var(--secondary-color-dark);
     text-align: center;
     font-family: var(--primary-font);
     box-sizing: border-box;
