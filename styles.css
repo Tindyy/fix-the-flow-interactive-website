@@ -32,11 +32,11 @@
     --filter-active: #6A0025;
     --filter-active-hover: #4A0019;
 
-    --button-normal: #F0E5E9;
-    --button--text-normal: #1F000B;
-    --button-hover: #6A0025;
+    --button-normal:  #6A0025;
+    --button--text-normal: #F0E5E9;
+    --button-hover: #B47F92;
     --button-text-active: #fff;
-    --button-active:  #B47F92;
+    --button-active:  #1F000B;
     --button-active-hover: #4A0019;
 
     --button-login-normal: #fff;
@@ -87,3 +87,55 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1{
+    font-size: var(--font-size-xxl);
+    font-family: var(--primary-font);
+}
+
+h2{
+    font-size: var(--font-size-xl);
+    font-family: var(--primary-font);
+}
+
+h3{
+    font-size: var(--font-size-l);
+    font-family: var(--primary-font);
+}
+
+h4{
+    font-size: var(--font-size-m-l);
+    font-family: var(--primary-font);
+}
+
+h5{
+    font-size: var(--font-size-m);
+    font-family: var(--primary-font);
+}
+
+p{
+    font-size: var(--font-size-s);
+    font-family: var(--secondary-font);
+}
+
+button{
+    background-color: var(--button-normal);
+    color: var(--button--text-normal);
+}
+
+button:hover{
+    background-color: var(--button-hover);
+}
+
+button:active{
+    background-color: var(--button-active);
+}
+
+a{
+    color: var(--button-normal);
+}
+
+a:hover{
+    color: var(--button-hover);
+}
+
