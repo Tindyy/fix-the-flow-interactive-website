@@ -22,7 +22,7 @@
     --primary-bg-batik: linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.98)), url("./assets/batik/pattern_waves-7_1_2_0-0_20_1__ffffff_000000_a90c00.png");
     --secondary-bg-batik: linear-gradient(rgba(244, 234, 238,.98), rgba(244, 234, 238,.97)), url("./assets/batik/pattern_batik-1_3_2_0-0_115_2__ffffff_b60003_b20606.png");
     --landing-page-bg:linear-gradient(rgb(106, 0, 37,.98), rgb(106, 0, 37,.98)),  url("/assets/batik/pattern_batik-1_3_2_0-0_115_2__ffffff_b60003_b20606.png") ;
-    --primary-bg-color: rgb(255, 255, 255);
+    --primary-bg-color: #ffffff;
     --opacity-bg: 0.02;
 
     --filter-normal: #D2B2BD;

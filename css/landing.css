@@ -1,6 +1,6 @@
 /* Base styles for mobile */
 body {
-    background: var(--landing-page-bg);
+    background-color: var( --landing-page-bg);
     color: var(--secondary-color-light);
     text-align: center;
     font-family: var(--primary-font);
@@ -131,7 +131,12 @@ button {
 /* General headings */
 .heading {
     font-family: var(--secondary-font);
-    margin-bottom: 2em;
+    color: var(--primary-bg-color);
+    
+}
+
+.mission{
+    color: var(--primary-color);
 }
 
 p {
