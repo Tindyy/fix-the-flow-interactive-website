@@ -99,6 +99,32 @@ button {
     font-size: var(--font-size-s);
 }
 
+/* Like Button */
+.like-button {
+    background-color: var(--secondary-color-light);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.like-button:hover {
+    background-color: var(--button-hover);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.like-button.clicked {
+    transform: scale(0.95);
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
     header h1 {

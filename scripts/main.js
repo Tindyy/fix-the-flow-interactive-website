@@ -36,10 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
             commentItem.innerHTML = `
                 <strong>${username}</strong>
                 <p>${commentText}</p>
+                <button class="like-button">Like <span class="like-count">0</span></button>
             `;
 
             // Append the comment to the list
             commentList.appendChild(commentItem);
+
+            // Add Like button functionality
+            const likeButton = commentItem.querySelector('.like-button');
+            let likeCount = 0;
+
+            likeButton.addEventListener('click', () => {
+                likeButton.classList.add('clicked');
+                setTimeout(() => likeButton.classList.remove('clicked'), 200);
+
+                likeCount++;
+                likeButton.querySelector('.like-count').textContent = likeCount;
+            });
 
             // Clear form
             commentForm.reset();
@@ -48,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 
 
