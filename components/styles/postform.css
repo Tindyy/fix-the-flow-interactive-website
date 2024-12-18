@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: var(--font-size-m);
+}
+
+
+p {
+    font-family: var(--secondary-font);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+button:active {
+    background-color: var(--button-active);
+}
+
+/* Add button animation */
+button.clicked {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forum-container {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    padding: 1.25vw;
+    background: var(--secondary-color-light);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+/* Comment Form */
+.comment-form-section {
+    margin-bottom: var(--spacing);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color-dark);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-s);
+}
+
+button {
+    align-self: flex-start;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: var(--spacing);
+}
+
+#comment-list {
+    list-style: none;
+}
+
+.comment-item {
+    border-radius: var(--border-radius);
+    padding: 1.25vw;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.comment-item strong {
+    font-size: var(--font-size-m);
+    color: var(--primary-color);
+}
+
+.comment-item p {
+    margin-top: 0.5rem;
+    font-size: var(--font-size-s);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: var(--font-size-l);
+    }
+
+    input, textarea, button {
+        font-size: var(--font-size-s);
+    }
+}
