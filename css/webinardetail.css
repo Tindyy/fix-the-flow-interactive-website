@@ -9,7 +9,7 @@
 
 main{
   background-image: var(--primary-bg-batik);
-  background-size: cover; /* Stretches background */
+  background-size: cover; /* Stretches background */ 
   background-repeat: no-repeat; /* Prevents tiling */
   background-attachment: scroll; /* Moves with content */
   height: 100%; /* Ensures background height matches content */
